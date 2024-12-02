@@ -1,0 +1,138 @@
+@media (max-width: 325px){
+    .top-bar h1{
+        font-size: 15px;
+    }
+    .contact-number {
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .logo {
+        max-width: 35px;
+    }
+    .banner img{
+        width: 280px;
+    }
+    .main-menu a{
+        font-size: 10px;
+    }
+}
+
+
+
+@media (min-width: 326px) and (max-width: 360px){
+    .top-bar h1{
+        font-size: 15px;
+    }
+    .logo {
+        max-width: 30px;
+    }
+    .contact-number {
+        font-size: 10px;
+    }
+    .main-menu a{
+        font-size: 13px;
+    }
+    .header h1{
+        font-size: 25px;
+    }
+    .advantages p{
+        font-size: 13px;
+    }
+    .baner{
+        width: 100%;
+        overflow: hidden;
+    }
+    .banner img{
+        width: 300px;
+    }
+}
+@media (min-width:361px) and (max-width: 430px){
+    .banner img{
+        width: 300px;
+    }
+    .top-bar h1{
+        font-size: 18px;
+  }
+  .logo {
+    max-width: 50px;
+}
+}
+@media (min-width: 431px) and (max-width: 560px){
+    .top-bar h1{
+        font-size: 15px;
+  }
+    .logo {
+        max-width: 70px;
+    }
+    .contact-number {
+        font-size: 20px;
+    }
+    .main-menu a{
+        font-size: 15px;
+    }
+    .header h1{
+        font-size: 35px;
+    }
+    .advantages p{
+        font-size: 13px;
+    }
+    .banner{
+        width: 100%;
+        overflow: hidden;
+    }
+    .banner img{
+        width: 400px;
+    }
+    .service-cards{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 561px) and (max-width: 750px){
+    .top-bar h1{
+        font-size: 35px;
+    }
+    .logo {
+        max-width: 90px;
+    }
+    .contact-number {
+        font-size: 20px;
+    }
+    .main-menu a{
+        font-size: 20px;
+    }
+    .header h1{
+        font-size: 37px;
+    }
+    .advantages p{
+        font-size: 16px;
+    }
+    .baner{
+        width: 100%;
+        overflow: hidden;
+    }
+    .banner img{
+        width: 400px;
+    }
+    .service-cards{
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (min-width:751px) and (max-width: 850px){
+    .service-cards{
+        align-items: center;
+    }
+    
+    .main-menu ul{
+        gap: 20px;
+        flex-direction: column;
+    }
+    .main-menu a{
+        margin-bottom: 10px;
+        height: 20px;
+
+    }
+    
+}

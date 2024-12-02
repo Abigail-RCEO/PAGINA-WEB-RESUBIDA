@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'garet';
+}
+@font-face {
+    font-family: "garet";
+    src: url(resources/Garet-Book.otf);
+}
+@font-face {
+    font-family: "gobold-bold";
+    src: url(resources/Gobold\ Bold.otf);
+}
+@font-face {
+    font-family: "gobold-light";
+    src: url(resources/Gobold\ Light.otf);
+}
+@font-face {
+    font-family: "gobold";
+    src: url(resources/Gobold\ Regular.otf);
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #3f506118;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% HEADER ########################################################### */
+header {
+    background: #003366;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 120px;
+}
+
+.contact-number {
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: default;
+}
+
+.main-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.main-menu a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    text-shadow: 0 2px 2px #2B2F33;
+    transition: all 1s ease;
+}
+
+.main-menu a:hover {
+    background-color: #0C83FA;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px #053463a9;
+    transform: scale(1.05);
+}
+
+/* ===== Encabezado principal ===== */
+.header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #003366, #00509b9f);
+    color: white;
+}
+
+.header h1 {
+    font-size: 30px;
+    font-family: 'gobold-light';
+    text-shadow:  0 2px 2px#001d3a70;
+    cursor: default;
+}
+.top-bar h1{
+    font-family: 'garet';
+    text-transform: uppercase;
+    text-shadow:  0 2px 2px#001d3a70;
+    cursor: default;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    cursor: default;
+    text-shadow:  0 2px 2px#001d3a70;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% VENTAJAS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+.advantages {
+    background: #3f506118;
+    text-align: center;
+    padding: 30px 20px;
+    align-items: center;
+}
+
+.advantages h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-shadow: 0 1px 1px #2124278f;
+    cursor: default;
+}
+
+.advantages p {
+    font-size: 1rem;
+    color: #2B2F33;
+    text-shadow: 0 1px 1px #2124278f;
+    text-align: justify;
+    padding: 40px;
+    cursor: default;
+}
+
+/* ===== Banner ===== */
+.banner {
+    background-color: #3f506118;
+    text-align: center;
+}
+
+.banner-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ##########################################  SERVICIOS ########################################### */
+.services {
+    background: #f5f5f5;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    cursor: default;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    cursor: pointer;
+    background-image: linear-gradient(to left, #003366, #0b2c4d);
+    color: white;
+    border: 1px solid #001e3b;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.37);
+    transition: all 0.3s ease;
+    font-size: 15px;
+    text-shadow: 0 1px 1px #001e3b6e;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    font-size: 16px;
+    
+}
+
+/* ########################## PRODUCTOS ######################################################################## */
+.products {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Contenedor del catálogo */
+.catalog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Tarjetas de productos */
+.product-card {
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between; 
+    overflow: hidden; 
+    height: 300px; 
+    max-width: 100%;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; 
+    margin-bottom: 10px; 
+}
+
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.product-card .price {
+    font-weight: bold;
+    color: #0055a5;
+    font-size: 1.1rem;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
+    justify-items: center; 
+}
+
+/* ===== Formulario de contacto ===== */
+.contact {
+    background: #e0e0e0;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input,
+form textarea,
+form button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #003366;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+form button:hover {
+    background: #0055a5;
+}
+
+/* ===== Footer ===== */
+footer {
+    background: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-info {
+    margin-bottom: 15px;
+}
+
+.social-links img {
+    max-width: 30px;
+    margin: 0 10px;
+}
+
+.back-to-top {
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    background: #0055a5;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.back-to-top:hover {
+    background: #0078d7;
+}
+
+
+@media (max-width: 768px) {
+    .main-menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .service-cards {
+        flex-direction: column;
+    }
+}
